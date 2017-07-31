@@ -62,4 +62,7 @@
 ;; add the mode to the `features' list
 (provide 'shadow-mode)
 
+;; setup files ending in “.shadow” to open in shadow-mode
+(add-to-list 'auto-mode-alist '("\\.shadow\\'" . shadow-mode))
+
 ;;; shadow-mode.el ends here
